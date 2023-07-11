@@ -12,7 +12,9 @@ header {
 .about {
   width: 100%;
 }
-
+.none {
+  display: none;
+}
 .aboutImg {
   background-image: url("/asset/aboutImg1.jpg");
   background-size: cover;
@@ -100,8 +102,12 @@ header {
     text-align: left;
     margin-bottom: 2em;
   }
-  .aboutUs img:first-child {
+  .aboutUs img {
     display: none;
+  }
+  .none {
+    display: block;
+    width: 100%;
   }
   .aboutUs img {
     height: 50vh;
