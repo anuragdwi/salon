@@ -8,6 +8,9 @@
   font-family: "Raleway", sans-serif;
   font-family: "Playfair Display", serif;
 }
+::-webkit-scrollbar {
+  display: none;
+}
 html {
   font-size: 62.5%;
 }
