@@ -1,0 +1,115 @@
+.appointment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2em 0;
+}
+.appointment h1 {
+  font-size: 5rem;
+}
+.appoint {
+  padding: 2em 0;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.appoint h3 {
+  font-size: 3rem;
+}
+.appoint p {
+  font-family: "Raleway";
+  font-size: 1.8rem;
+  margin: 0.5em 0;
+}
+.appoint h4 {
+  font-size: 3rem;
+  margin-bottom: 1em;
+}
+.appoint label {
+  /* font-family: "Raleway"; */
+  font-size: 2rem;
+}
+.appoint input {
+  width: 50%;
+  border: none;
+  padding: 0.5em;
+  font-family: "Raleway";
+  outline: none;
+  border-bottom: 1px solid black;
+  margin-bottom: 2em;
+}
+.appoint select {
+  width: 50%;
+  padding: 0.6rem 0.8rem;
+  border: none;
+  outline: none;
+  border: 1px solid black;
+  margin: 0.5em 0;
+  font-family: "Raleway";
+}
+.appoint option,
+.appoint optgroup {
+  font-family: "Raleway";
+}
+.appoint button {
+  padding: 0.6em 1.2em;
+  margin: 0.5em 0;
+  font-family: "Raleway";
+  background-color: #fff;
+  outline: none;
+  cursor: pointer;
+}
+@media screen and (max-width: 1200px) and (min-width: 800px) {
+  .appointment h1 {
+    font-size: 4rem;
+  }
+  .appoint h4 {
+    font-size: 3rem;
+    margin-bottom: 1em;
+  }
+  .appoint input {
+    width: 100%;
+  }
+  .appoint select {
+    width: 100%;
+    padding: 0.4rem 0.6rem;
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 600px) {
+  .appointment h1 {
+    font-size: 4rem;
+  }
+  .appoint h4 {
+    font-size: 2rem;
+    margin-bottom: 1em;
+  }
+  .appoint input {
+    width: 100%;
+  }
+  .appoint select {
+    width: 100%;
+    padding: 0.4rem 0.6rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .appoint {
+    width: 90%;
+  }
+  .appointment h1 {
+    font-size: 3rem;
+  }
+  .appoint h4 {
+    font-size: 2rem;
+    margin-bottom: 1em;
+  }
+  .appoint input {
+    width: 100%;
+  }
+  .appoint select {
+    width: 100%;
+    padding: 0.4rem 0.6rem;
+  }
+}

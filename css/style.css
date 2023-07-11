@@ -416,8 +416,11 @@ header i {
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    padding: 13em 0;
+    padding: 15em 0;
     width: 100%;
+  }
+  .menuLink a {
+    font-size: 2.4rem;
   }
   .navbar i {
     display: block;
