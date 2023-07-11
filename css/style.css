@@ -1,0 +1,512 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  font-family: "Raleway", sans-serif;
+  font-family: "Playfair Display", serif;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 5em;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transition: ease-in-out all 0.2s;
+}
+
+.logo {
+  font-size: 2.7rem;
+  font-weight: bold;
+  color: white;
+}
+
+.navbar {
+  width: 50%;
+}
+.open {
+  transform: translateX(0%);
+}
+.sticky {
+  background-color: #111;
+}
+.menuLinks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menuLink {
+  list-style: none;
+}
+.menuLink a {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: white;
+}
+header i {
+  display: none;
+}
+.navbar i {
+  display: none;
+  color: white;
+}
+
+.hero {
+  width: 100%;
+  display: flex;
+  background-color: #36353a;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  background-image: url("/asset/heroImg1.jpg");
+  background-position: center right;
+  background-size: 70% 100%;
+  background-repeat: no-repeat;
+}
+.hero .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10em;
+}
+.left div p {
+  font-size: 2rem;
+  text-transform: capitalize;
+  line-height: 0.7;
+  color: white;
+}
+.left div h3 {
+  font-size: 10rem;
+  width: 90%;
+  text-transform: uppercase;
+  color: white;
+}
+.hero .right {
+  width: 60%;
+  height: 100%;
+}
+.right img {
+  height: 100%;
+  z-index: -1;
+}
+.left div button {
+  padding: 1em 2em;
+  cursor: pointer;
+  color: #36353a;
+  font-size: 1.4rem;
+  margin-top: 1em;
+  font-weight: bold;
+}
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  padding: 4em 4em;
+  position: relative;
+}
+.Servicex {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+
+  position: relative;
+}
+.services h1 {
+  font-size: 4rem;
+}
+.service {
+  padding: 4em;
+  background: url("/asset/serviceBg.png") center center / cover;
+  text-align: center;
+  width: 40em;
+  height: 100%;
+  margin: 1em 0;
+}
+.service h3 {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  margin-bottom: 0.4em;
+}
+.service p {
+  margin-bottom: 0.6em;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.service a {
+  font-size: 1.4rem;
+  color: black;
+  text-transform: lowercase;
+}
+.experts {
+  margin: 2em 0;
+  text-align: center;
+  background-color: #999;
+  padding: 4em 0;
+}
+.experts h1 {
+  font-size: 4rem;
+  margin-bottom: 1em;
+}
+.experts .Experts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.expert {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 70vh;
+  overflow: hidden;
+  width: 40em;
+  border-radius: 14px;
+  margin-bottom: 2em;
+  border: 1px solid black;
+  margin: 2em 2em;
+  background-color: white;
+  box-shadow: 5px 5px #111;
+}
+.expert div {
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+  background-size: 100%;
+  transition: background ease-in-out.3s;
+  margin-bottom: 1em;
+}
+.expert:nth-child(1) div {
+  background: url("/asset/Lisa.jpg") center center / cover;
+}
+.expert:nth-child(2) div {
+  background: url("/asset/Rias.jpg") center center / cover;
+}
+.expert:nth-child(3) div {
+  background: url("/asset/Akane.jpg") center center / cover;
+}
+.expert h4 {
+  font-size: 2.4rem;
+  padding: 0 0.5em;
+  margin: 0;
+}
+.expert p {
+  padding: 0 0.8em;
+  font-size: 1.8rem;
+  margin-bottom: 0.6em;
+}
+.quote {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+.quote h1 {
+  width: 95%;
+  text-align: center;
+  font-size: 8rem;
+}
+.footer {
+  /* height: 40vh; */
+  background: #111;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 3em 0;
+  color: white;
+  /* flex-wrap: wrap; */
+}
+.Ftrlogo {
+  font-size: 4rem;
+  /* margin: 2em 0; */
+  text-transform: uppercase;
+  padding: 0;
+  text-align: left;
+}
+.appointment div {
+  font-size: 2rem;
+}
+.hours div {
+  font-size: 1.82rem;
+  margin: 0.2em 0;
+  color: rgb(194, 194, 194);
+}
+.hours div:first-child {
+  color: white;
+}
+.hours div:last-child {
+  color: white;
+}
+.socials h1 {
+  font-size: 2rem;
+}
+.social a {
+  font-size: 3em;
+  margin-right: 0.5em;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+.social a:hover {
+  color: #999;
+}
+.copyright {
+  background: #111;
+  font-size: 1.4rem;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+}
+@media screen and (max-width: 1200px) and (min-width: 800px) {
+  .hero {
+    background-size: 70% 80%;
+  }
+  .hero .left {
+    padding: 10em;
+  }
+  .left div p {
+    font-size: 1.5rem;
+    line-height: 1;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  .left div h3 {
+    font-size: 7rem;
+  }
+  .left div button {
+    font-size: 1.2rem;
+  }
+  .quote h1 {
+    font-size: 5rem;
+  }
+  .Ftrlogo {
+    font-size: 3.5rem;
+  }
+  .appointment div {
+    font-size: 1.8rem;
+  }
+  .hours div {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 600px) {
+  .hero {
+    background-size: cover;
+    background-position: center center;
+  }
+  .hero .left {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+  .hero .right {
+    display: none;
+  }
+  .left div p {
+    font-size: 1.5rem;
+    line-height: 1;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  .left div h3 {
+    font-size: 7rem;
+    margin: 0;
+    width: 100%;
+  }
+  .left div button {
+    font-size: 1.2rem;
+  }
+  .service {
+    margin-bottom: 2em;
+  }
+  .service h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 0.4em;
+  }
+  .service p {
+    margin-bottom: 0.2em;
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+  .service a {
+    font-size: 1.2rem;
+    color: black;
+    text-transform: lowercase;
+  }
+  .quote h1 {
+    font-size: 4rem;
+  }
+  .Ftrlogo {
+    font-size: 3rem;
+  }
+  .appointment div {
+    font-size: 1.4rem;
+  }
+  .hours div {
+    font-size: 1.4rem;
+  }
+  .social a {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .hero {
+    background-size: cover;
+    background-position: center center;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 1em;
+  }
+  header i {
+    color: white;
+    font-size: 2rem;
+  }
+  .navbar {
+    position: fixed;
+    height: 100vh;
+    display: flex;
+    z-index: 999;
+    align-items: center;
+    top: 0;
+    right: 0;
+    width: 70%;
+    flex-direction: column;
+    background: black;
+    transform: translateX(100%);
+    transition: transform ease-in-out.3s;
+  }
+  .open {
+    transform: translateX(0%);
+  }
+  .navbar i {
+    position: absolute;
+    top: 0.6em;
+    right: 0.4em;
+    font-size: 2.4rem;
+  }
+  .menuLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 13em 0;
+    width: 100%;
+  }
+  .navbar i {
+    display: block;
+    color: white;
+  }
+  .hero .left {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+  .hero .right {
+    display: none;
+  }
+  .left div p {
+    font-size: 1.4rem;
+    line-height: 1;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  .left div h3 {
+    font-size: 6rem;
+    margin: 0;
+    width: 100%;
+  }
+  .left div button {
+    font-size: 1.2rem;
+  }
+  .services {
+    padding: 2em 1em;
+  }
+  .services h1 {
+    font-size: 2rem;
+  }
+  .service {
+    padding: 2em;
+  }
+  .service h3 {
+    font-size: 1.82rem;
+    text-transform: uppercase;
+    margin-bottom: 0.4em;
+  }
+  .service p {
+    margin-bottom: 0.2em;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 2em;
+  }
+  .service a {
+    font-size: 1.2rem;
+    color: black;
+    text-transform: lowercase;
+  }
+  .expert {
+    width: 90%;
+    margin: 2em 0;
+  }
+  .expert p {
+    margin-bottom: 0.6em;
+  }
+  .quote h1 {
+    font-size: 3rem;
+  }
+  .footer {
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    padding-left: 2em;
+  }
+  .Ftrlogo {
+    font-size: 3rem;
+    margin-bottom: 1em;
+  }
+  .appointment {
+    margin-bottom: 2em;
+  }
+  .appointment div {
+    font-size: 1.4rem;
+  }
+  .hours {
+    margin-bottom: 2em;
+  }
+  .hours div {
+    font-size: 1.4rem;
+  }
+  .social {
+    margin-bottom: 2em;
+  }
+  .social a {
+    font-size: 2rem;
+  }
+  .copyright {
+    font-size: 1.1rem;
+  }
+}
